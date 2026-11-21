@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <meta name="theme-color" content="#07080d" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <title>Fotima</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg-glow bg-glow-1"></div>
+  <div class="bg-glow bg-glow-2"></div>
+
+  <main class="app">
+    <header class="topbar">
+      <div class="creator">
+        <span class="creator-dot"></span>
+        <span class="creator-name">Xamroyev Abror</span>
+      </div>
+      <div id="connPill" class="conn-pill" data-state="idle">
+        <span class="pill-indicator"></span>
+        <span id="connText">Tayyor</span>
+      </div>
+    </header>
+
+    <section class="stage">
+      <div class="orb-wrap">
+        <div class="orb-ring orb-ring-outer"></div>
+        <div class="orb-ring orb-ring-inner"></div>
+        <div id="orb" class="orb" data-mode="idle">
+          <div class="orb-core"></div>
+        </div>
+      </div>
+
+      <div class="identity">
+        <h1 class="title">Fotima</h1>
+        <p id="statusText" class="status-text">Gaplashish uchun tugmani bosing</p>
+      </div>
+    </section>
+
+    <footer class="controls">
+      <button id="toggleBtn" class="main-btn" type="button" data-active="false">
+        <span class="btn-icon" aria-hidden="true">
+          <svg id="micIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="9" y="2" width="6" height="11" rx="3"></rect>
+            <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+            <line x1="12" y1="19" x2="12" y2="22"></line>
+          </svg>
+        </span>
+        <span id="btnLabel">Boshlash</span>
+      </button>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
